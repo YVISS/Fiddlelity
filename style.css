@@ -1,3 +1,26 @@
 body {
     font-family: 'Poppins', san-serif;
 }
+
+.navbar-left img {
+    padding: 0px;
+    border-radius: 50%;
+    margin: 20px;
+    width: 100px;
+    height: auto;
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right {
+    font-weight: 550;
+    justify-content: space-between;
+    text-transform: uppercase;
+}
+
+.navbar-right div {
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    color: rgb(99, 99, 99);
+}
