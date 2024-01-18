@@ -6,12 +6,15 @@ body {
 }
 
 .navbar {
-    padding: 20px;
+    padding: 5px;
     font-size: 17px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
+    margin: auto;
+    background-image: linear-gradient(rgb(128, 128, 128, 20%), white);
+    background-color: ;
     /* Change this line */
 }
 
@@ -25,7 +28,8 @@ body {
 .navbar-right div {
     text-transform: uppercase;
     font-weight: 700;
-    padding: 10px;
+    padding: 0px;
+    transition: color 0.3s ease;
 }
 
 .navbar-right {
@@ -35,4 +39,8 @@ body {
 
 .navbar-right>* {
     margin-right: 90px;
+}
+
+.navbar-right div:hover {
+    color: gray;
 }
