@@ -22,6 +22,7 @@ body {
     height: auto;
     border-radius: 50%;
     margin-right: 20px;
+    margin-left: 20px;
 }
 
 .navbar-right div {
@@ -29,6 +30,7 @@ body {
     font-weight: 700;
     padding: 0px;
     transition: color 0.3s ease;
+    color: rgb(102, 102, 102);
 }
 
 .navbar-right {
@@ -41,5 +43,6 @@ body {
 }
 
 .navbar-right div:hover {
-    color: gray;
+    color: black;
+    cursor: pointer;
 }
