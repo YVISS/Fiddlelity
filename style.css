@@ -5,6 +5,7 @@ body {
     height: auto;
 }
 
+
 .navbar {
     padding: 5px;
     font-size: 17px;
@@ -13,9 +14,23 @@ body {
     align-items: center;
     flex-direction: row;
     margin: auto;
-    background-image: linear-gradient(rgb(128, 128, 128, 20%), white);
     /* Change this line */
 }
+
+
+.topbar {
+    background-color: rgb(225, 225, 225);
+    border: none;
+    border-radius: 0;
+    margin-bottom: 0;
+    text-align: center;
+    padding: 10px 0;
+    font-family: 'BoosterNext-Medium', sans-serif;
+    font-size: 12px;
+    height: 30px;
+    position: static;
+}
+
 
 .navbar-left img {
     width: 100px;
@@ -25,24 +40,50 @@ body {
     margin-left: 20px;
 }
 
+
 .navbar-right div {
     text-transform: uppercase;
     font-weight: 700;
     padding: 0px;
     transition: color 0.3s ease;
     color: rgb(102, 102, 102);
+    margin-top: 5px;
 }
 
 .navbar-right {
     display: flex;
     align-items: center;
+    margin-right: 50px;
 }
 
 .navbar-right>* {
-    margin-right: 90px;
+    margin-right: 70px;
 }
 
 .navbar-right div:hover {
     color: black;
     cursor: pointer;
+}
+
+
+.products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* You may adjust this value based on your layout */
+}
+
+.products img {
+    width: 125vh;
+    /* Use 100% width to ensure responsiveness */
+    max-width: 125vh;
+    /* Set the maximum width for larger screens */
+    height: auto;
+}
+
+*,
+::after,
+::before {
+    box-sizing: inherit;
 }
