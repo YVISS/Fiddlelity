@@ -1,89 +1,108 @@
 body {
-    font-family: 'Poppins', sans-serif;
     margin: 0;
-    padding: 0;
-    height: auto;
-}
-
-
-.navbar {
-    padding: 5px;
-    font-size: 17px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    margin: auto;
-    /* Change this line */
-}
-
-
-.topbar {
-    background-color: rgb(225, 225, 225);
-    border: none;
-    border-radius: 0;
-    margin-bottom: 0;
-    text-align: center;
-    padding: 10px 0;
-    font-family: 'BoosterNext-Medium', sans-serif;
-    font-size: 12px;
-    height: 30px;
-    position: static;
-}
-
-
-.navbar-left img {
-    width: 100px;
-    height: auto;
-    border-radius: 50%;
-    margin-right: 20px;
-    margin-left: 20px;
-}
-
-
-.navbar-right div {
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 0px;
-    transition: color 0.3s ease;
-    color: rgb(102, 102, 102);
-    margin-top: 5px;
-}
-
-.navbar-right {
-    display: flex;
-    align-items: center;
-    margin-right: 50px;
-}
-
-.navbar-right>* {
-    margin-right: 70px;
-}
-
-.navbar-right div:hover {
-    color: black;
-    cursor: pointer;
-}
-
-
-.products {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    /* You may adjust this value based on your layout */
-}
-
-.products img {
-    width: 125vh;
-    /* Use 100% width to ensure responsiveness */
-    max-width: 125vh;
-    /* Set the maximum width for larger screens */
-    height: auto;
+    font-family: 'Montserrat', sans-serif;
 }
 
 *,
 ::after,
 ::before {
-    box-sizing: inherit;
+    box-sizing: border-box;
+}
+
+.navbar {
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    align-items: center;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, .1), 0 2px 2px rgba(0, 0, 0, .06), 0 0 2px rgba(0, 0, 0, .07);
+}
+
+.navbar-left img {
+    width: 90px;
+    max-width: 90px;
+    cursor: pointer;
+}
+
+.navbar-left div {
+    text-transform: uppercase;
+    font-weight: 700;
+    cursor: pointer;
+    transition: color 0.3s ease;
+
+}
+
+.navbar-left div:hover {
+    color: gray;
+
+}
+
+.navbar-left {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-left>* {
+    padding: 20px;
+}
+
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.location {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    transition: color 0.3s ease;
+    margin-right: 50px;
+    cursor: pointer;
+    order: 3;
+}
+
+.location:hover {
+    transition: color 0.3s ease;
+    color: gray;
+}
+
+.shop {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    margin-right: 20px;
+    cursor: pointer;
+    order: 2;
+}
+
+.shop:hover {
+    transition: color 0.3s ease;
+    color: gray;
+}
+
+.search {
+    display: flex;
+    padding: 10px;
+    margin-right: 20px;
+    order: 1;
+    align-items: center;
+}
+
+.search-form {
+    padding: 10px;
+    display: flex;
+    margin-right: 0px;
+    align-items: center;
+}
+
+.search-form svg {
+    cursor: pointer;
+}
+
+.search-form input {
+    margin-left: 10px;
 }
