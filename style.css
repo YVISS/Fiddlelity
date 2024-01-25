@@ -4,6 +4,19 @@ body {
     font-size: 14vw;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+    padding: px
+}
+
+a div {
+    padding: 0px;
+}
+
+a:active {
+    color: gray;
+}
 
 *,
 ::after,
@@ -12,7 +25,7 @@ body {
 }
 
 .navbar {
-    padding: 5px;
+    padding: 10px;
     display: flex;
     justify-content: space-between;
     font-size: 14px;
@@ -35,6 +48,12 @@ body {
     font-weight: 700;
     cursor: pointer;
     transition: color 0.3s ease;
+    padding: 20px;
+
+}
+
+.navbar-right a {
+    font-style: normal;
 
 }
 
@@ -95,6 +114,9 @@ body {
     color: gray;
 }
 
+.shop svg {
+    padding: 0px;
+}
 
 .slideshow {
     position: relative;
