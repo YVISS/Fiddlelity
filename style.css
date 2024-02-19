@@ -125,10 +125,10 @@ a:active {
 .container{
     /**/
     display: grid;
-    max-width: 988px;
+    max-width: 960px;
     margin: 100px auto;
     padding: 10px;
-    grid-template-columns: repeat(3, 1fr); /*adjust the sizes per column   | | |   */ /*adjust the sizes per row <---->  */
+    grid-template-columns: repeat(3, 300px); /*adjust the sizes per column   | | |   */ /*adjust the sizes per row <---->  */
     grid-auto-rows: minmax(200px, auto); /*auto adjust the size depending on the content size <---->  */
     gap: 20px 15px;
 }
