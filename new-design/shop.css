@@ -1,0 +1,110 @@
+body{
+    font-size: 19px;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.whole-page{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.contents{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.menu-item{
+    cursor: pointer;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+a:hover{
+    color: gray;
+    transition: 0.3s ease-in;
+}
+.navbar-top{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    z-index: 999;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 9px 5px 1px rgba(0,0,0,0.24);
+    -webkit-box-shadow: 0px 9px 5px 1px rgba(0,0,0,0.24);
+    -moz-box-shadow: 0px 9px 5px 1px rgba(0,0,0,0.24);
+}
+
+.pic img{
+    margin-top: 20px;
+    width: 1000px;
+    height: auto;
+}
+
+.bottom-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75px;
+    background-color: rgb(96, 109, 96);
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+    top: 0;
+}
+
+.footer-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-info .footer-links a {
+    color: rgb(220, 242, 241);
+    text-decoration: none;
+}
+
+.fiddlelity-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    padding: 0px;
+    cursor: pointer;
+    width: 70px; 
+}
+
+@media (max-width: 600px){
+    .navbar-top{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        justify-content: space-between;
+        position: fixed;
+        top: 0;
+    }
+}
